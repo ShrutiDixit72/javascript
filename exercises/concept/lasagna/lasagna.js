@@ -43,7 +43,7 @@ const PREPARATION_MINUTES_PER_LAYER = 2;
  * @returns {number} the number of minutes remaining
  */
 export function remainingMinutesInOven(actualMinutesInOven) {
-  throw new Error('Remove this line and implement the function');
+  return 40-actualMinutesInOven;
 }
 
 /**
@@ -53,7 +53,7 @@ export function remainingMinutesInOven(actualMinutesInOven) {
  * @returns {number} the total preparation time
  */
 export function preparationTimeInMinutes(numberOfLayers) {
-  throw new Error('Remove this line and implement the function');
+  return 2*numberOfLayers;
 }
 
 /**
@@ -65,5 +65,5 @@ export function preparationTimeInMinutes(numberOfLayers) {
  * @returns {number} the total working time
  */
 export function totalTimeInMinutes(numberOfLayers, actualMinutesInOven) {
-  throw new Error('Remove this line and implement the function');
+return 2*numberOfLayers + actualMinutesInOven;
 }
